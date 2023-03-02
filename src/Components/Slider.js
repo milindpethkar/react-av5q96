@@ -17,7 +17,7 @@ const data=[{
 {
   id: '2',
   url: 'https://images.dominos.co.in/IndianTandooriPaneer.jpg',
-  name: 'Indi Tandoori Paneer',
+  name: 'Indi Tandoori ',
   price: ' 439',
   value:
     'It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum, red paprika & mint mayo',
@@ -67,19 +67,19 @@ const data=[{
     return (
       <div  className='slick-slider-component '> 
         <h2> Multiple items </h2>
-        <Slider {...settings}className='bg-gray-300 w-3/4 h-80 p-10' >
-          {data.map((item,id)=>  <div className=' h-48'key={id}>
+        <Slider {...settings}className='bg-gray-300 w-full p-10' >
+          {data.map((item,id)=>  <div className='grid  h-48 px-10'key={id}>
             <h3>1</h3>
             
-<a href="#" class="block text-xs h-60 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800  dark:hover:bg-gray-700">
+<a href="#" class="block  text-xs h-48 p-6 py-5 px-10 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800  dark:hover:bg-gray-700">
   <img className='w-full h-10 rounded-lg ' src={item.url} alt=""/>
     <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">{item.name}</h5>
     
-    <p class=" text-gray-700 dark:text-gray-400 h-10">{item.value}  </p>
+    <p class="text-xs text-gray-700 dark:text-gray-400 h-10">{item.value}  </p>
     <a   class="flex items-center justify-between px-3 py-2 border-t dark:border-gray-700 ">
-           <a   class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
+          <div> <a   class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
                Add to cart
-           </a> </a>
+           </a></div> </a>
 </a>
 
 

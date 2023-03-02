@@ -7,7 +7,7 @@ import About from './Components/About';
 import Services from './Components/Services';
 import Product from './Components/Product';
 import Bhondu from './Bhondu';
-import MultipleItems from './Components/Slider'
+
 
 
 
@@ -21,10 +21,11 @@ export default function App() {
       <BrowserRouter>
        
           <Bhondu/>
-          <MultipleItems/>
+          
          {/* <Main/> */}
             <Routes>
               <Route path='/' element={<Main/>} />
+              
               <Route path='/services ' element={<Services/>} />
               <Route path='/about'element={<About/>} />
               <Route path='/contact' element={<Contact/>} />

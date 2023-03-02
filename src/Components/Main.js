@@ -7,6 +7,7 @@ import Services from './Services';
 import Product from './Product';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
+import MultipleItems from './Slider'
 
 function Main() {
   return (
@@ -38,13 +39,16 @@ function Main() {
           </Link>
         </div>
       </div>
-      <div></div>
+     
       <div>
         <img
           className="rounded-lg"
           src="https://www.infosys.com/content/dam/infosys-web/en/future-work-report.jpg"
           alt=""
         />
+      </div>
+      <div>
+        <MultipleItems />
       </div>
       <div className="w-full relative text-center grid justify-center items-center">
         <img
